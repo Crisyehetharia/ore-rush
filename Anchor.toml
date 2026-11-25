@@ -1,0 +1,22 @@
+skip_local_validator = true
+
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+ore_rush = "FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS"
+
+[programs.devnet]
+ore_rush = "FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS"
+
+[provider]
+cluster = "devnet"
+wallet = "./deployer-keypair.json"
+
+[scripts]
+test = "cargo test"
+
+[hooks]

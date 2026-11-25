@@ -1,0 +1,51 @@
+deployer: oB6dRK5HDYnTDdH44B3SwhBv7phmiaWoxWQxnsecST3
+player:    7yn4UhK9ygQkJBiKYMxVeBLfknowRoWHzxpJVwFujcAX
+house:     4kZjDNXEC99BXMxDWpLejGSqWHjAdinhJUNwHzEDetib
+session:   HyqzPRCGYBxqJnUv3tPx6uGx29LEf7MGQFL52xktrzoL
+deployer balance: 0.6619 SOL
+player balance:   0.2960 SOL
+house already initialized, skipping
+pot already funded (2.00 SOL), skipping fund_pot
+start_round: https://explorer.solana.com/tx/2wjD4dUdLT8qrCouUraWaiJ9wkGX241Zr4nq1yie7tFPAyGk1nSikjLNDABTrVY4MaV7uumjC6bfga6zML8hBDYi?cluster=devnet
+round ends at: 2026-11-25T07:12:25.000Z
+delegate_session: https://explorer.solana.com/tx/XHK5jwhXL4KUVK4T7iWx1N5t4emREhJcTHk5jK4a9XMKMik3SAVHm6xmcVk5QmaD2UuY1rb9uZs4Hv8YYF3o7yu?cluster=devnet
+session owner after delegate: DELeGGvXpWV2fqJUhqcF5ZSYMS4JTLjteaAMARRSaeSh
+mining 45x on ER...
+  mined 10/45 (last: https://explorer.solana.com/tx/5YRk4J1GHQmv7u1t6v1N5P2V5ax1fLpTLeuZpB1Hhj3aXyuph6prvBG2mKnQ7vZjqtsjEpH81TakWjLTeLdm4E1z?cluster=devnet)
+  mined 20/45 (last: https://explorer.solana.com/tx/5PFUS9iV6zALtJ8MfCzdN58jRLwmEroo4kEhmxHJf82mP1r3mBD9EeqUUA3sJyjsKfg3nLoCAQEiJPps42VYSrgw?cluster=devnet)
+  mined 30/45 (last: https://explorer.solana.com/tx/5aBSVBu8yCXoxh1cLL8nh88hi4HuUDSoooqiSoTdWzbPFtiHyF2XbHfkoWtLvzP7bjmpdm5WKEKqrQdx3gCodJCD?cluster=devnet)
+  mined 40/45 (last: https://explorer.solana.com/tx/2o1rHrAKjpHwFoTKCvvrGENQRHD3iisYUY66iyugZxH8PXwUJyMtwJMLPyGJdyJ6HEMfWqoaeW7wXaj4CCzo51fC?cluster=devnet)
+mine latency ms: median 241, p90 248, max 1494
+finish_round (ER): https://explorer.solana.com/tx/p9CHBUZnScriFBcL2QJYhe3q28KBor9AWhLx559HVGEBmHYNMkzBnUMv5j9xPuDfwbyE1yAQMfLcqk782nftNXN?cluster=devnet
+session after finish: {"player":"7yn4UhK9ygQkJBiKYMxVeBLfknowRoWHzxpJVwFujcAX","score":45,"startedAt":1795590685,"endsAt":1795590745,"status":1,"claimed":false}
+waiting 46s for round window to end...
+E2E FAILED: SendTransactionError: Simulation failed. 
+Message: Transaction simulation failed: Error processing Instruction 0: invalid program argument. 
+Logs: 
+[
+  "Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS invoke [1]",
+  "Program log: Instruction: Claim",
+  "Program 11111111111111111111111111111111 invoke [2]",
+  "Transfer: `from` must not carry data",
+  "Program 11111111111111111111111111111111 failed: invalid program argument",
+  "Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS consumed 10319 of 200000 compute units",
+  "Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS failed: invalid program argument"
+]. 
+Catch the `SendTransactionError` and call `getLogs()` on it for full details.
+    at Connection.sendEncodedTransaction (/home/hatch/workspace/solana-blitz-v10/ore-rush/scripts/node_modules/@solana/web3.js/lib/index.cjs.js:8405:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Connection.sendRawTransaction (/home/hatch/workspace/solana-blitz-v10/ore-rush/scripts/node_modules/@solana/web3.js/lib/index.cjs.js:8370:20)
+    at async send (file:///home/hatch/workspace/solana-blitz-v10/ore-rush/scripts/e2e-devnet.mjs:66:15)
+    at async main (file:///home/hatch/workspace/solana-blitz-v10/ore-rush/scripts/e2e-devnet.mjs:314:9) {
+  signature: '',
+  transactionMessage: 'Transaction simulation failed: Error processing Instruction 0: invalid program argument',
+  transactionLogs: [
+    'Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS invoke [1]',
+    'Program log: Instruction: Claim',
+    'Program 11111111111111111111111111111111 invoke [2]',
+    'Transfer: `from` must not carry data',
+    'Program 11111111111111111111111111111111 failed: invalid program argument',
+    'Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS consumed 10319 of 200000 compute units',
+    'Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS failed: invalid program argument'
+  ]
+}

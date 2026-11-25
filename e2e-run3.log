@@ -1,0 +1,37 @@
+deployer: oB6dRK5HDYnTDdH44B3SwhBv7phmiaWoxWQxnsecST3
+player:    7yn4UhK9ygQkJBiKYMxVeBLfknowRoWHzxpJVwFujcAX
+house:     4kZjDNXEC99BXMxDWpLejGSqWHjAdinhJUNwHzEDetib
+session:   HyqzPRCGYBxqJnUv3tPx6uGx29LEf7MGQFL52xktrzoL
+deployer balance: 0.6619 SOL
+player balance:   0.2960 SOL
+house already initialized, skipping
+E2E FAILED: SendTransactionError: Simulation failed. 
+Message: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1. 
+Logs: 
+[
+  "Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS invoke [1]",
+  "Program log: Instruction: FundPot",
+  "Program 11111111111111111111111111111111 invoke [2]",
+  "Transfer: insufficient lamports 661923854, need 1000000000",
+  "Program 11111111111111111111111111111111 failed: custom program error: 0x1",
+  "Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS consumed 4911 of 200000 compute units",
+  "Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS failed: custom program error: 0x1"
+]. 
+Catch the `SendTransactionError` and call `getLogs()` on it for full details.
+    at Connection.sendEncodedTransaction (/home/hatch/workspace/solana-blitz-v10/ore-rush/scripts/node_modules/@solana/web3.js/lib/index.cjs.js:8405:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Connection.sendRawTransaction (/home/hatch/workspace/solana-blitz-v10/ore-rush/scripts/node_modules/@solana/web3.js/lib/index.cjs.js:8370:20)
+    at async send (file:///home/hatch/workspace/solana-blitz-v10/ore-rush/scripts/e2e-devnet.mjs:66:15)
+    at async main (file:///home/hatch/workspace/solana-blitz-v10/ore-rush/scripts/e2e-devnet.mjs:183:13) {
+  signature: '',
+  transactionMessage: 'Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1',
+  transactionLogs: [
+    'Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS invoke [1]',
+    'Program log: Instruction: FundPot',
+    'Program 11111111111111111111111111111111 invoke [2]',
+    'Transfer: insufficient lamports 661923854, need 1000000000',
+    'Program 11111111111111111111111111111111 failed: custom program error: 0x1',
+    'Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS consumed 4911 of 200000 compute units',
+    'Program FknaFskJcLQm3Tw4uRUEnMXvwa5xsED1FKB9NGyMY8HS failed: custom program error: 0x1'
+  ]
+}

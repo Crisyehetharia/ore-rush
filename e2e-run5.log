@@ -1,0 +1,26 @@
+deployer: oB6dRK5HDYnTDdH44B3SwhBv7phmiaWoxWQxnsecST3
+player:    7yn4UhK9ygQkJBiKYMxVeBLfknowRoWHzxpJVwFujcAX
+house:     4kZjDNXEC99BXMxDWpLejGSqWHjAdinhJUNwHzEDetib
+session:   HyqzPRCGYBxqJnUv3tPx6uGx29LEf7MGQFL52xktrzoL
+deployer balance: 6.2451 SOL
+player balance:   0.0009 SOL
+funded player 0.3 SOL: https://explorer.solana.com/tx/2odW8GMi5jFwRDd548k6WojVHyjhPLC2njdaS4zRSe2EQpPyVHbX5iwLDhvZQwBmhHhR9TZEBWHpn89aUqcyvuxM?cluster=devnet
+house already initialized, skipping
+pot already funded (2.00 SOL), skipping fund_pot
+start_round: https://explorer.solana.com/tx/3JaYV5g4EEcrrdCJFfJPqFHViN69xRTgRZUPpVJA96wvMVFVxzfM8EXiAoNy9wpBcqehjQPaZjMRMQi6yqjQpyYN?cluster=devnet
+round ends at: 2026-11-25T07:35:42.000Z
+delegate_session: https://explorer.solana.com/tx/2UodyFfsQVTmMmnikTwCh8hrKrxVnHAvfBrafMzneWbQT1DqH7YzfeSyJwsA6N1gcGTmc2mGGXHPUpGrJMGPKoGX?cluster=devnet
+session owner after delegate: DELeGGvXpWV2fqJUhqcF5ZSYMS4JTLjteaAMARRSaeSh
+mining 45x on ER...
+  mined 10/45 (last: https://explorer.solana.com/tx/4B68dDQHi63VKFKsCXdneTqMpmAznzLKGBu1ZTCx2yccqy3JXqYEmQor7w18UCP8HVqy3P2ip4oc5m6vQw8tnuhA?cluster=devnet)
+  mined 20/45 (last: https://explorer.solana.com/tx/pEwLTE4bEcvBTCy6MDJKn2Mgjc9Xa82n328wZHdeZThJouCTPx4VVRBPjyCGrq5Xkjbn9xzgnR5ZQchTZHjLQUR?cluster=devnet)
+  mined 30/45 (last: https://explorer.solana.com/tx/34JW7ugM2pnyCvByLLdm9KGAynUrAFV25ro8TrzY6nyxNVXaVDY9fe85L6utgeQZ8TBj9CNXHgMgFi4fSrVcNZyS?cluster=devnet)
+  mined 40/45 (last: https://explorer.solana.com/tx/2rQubVUHJCfg6MTNtaVhNiEFRW8MkyNyMssqhBQxM2f21TUy93sfYcz63QXXmnRLFa21LHZ8UKugCb2cCVkad5wp?cluster=devnet)
+mine latency ms: median 246, p90 252, max 1454
+finish_round (ER): https://explorer.solana.com/tx/3K85ehrJopBs861bGGvN3tkeQ7fb7BSnB2A79mcfDrSKGgnGNKnbrVv73gt8zFrrWwoaaJpdJ9sACUt4FtpVGA3X?cluster=devnet
+session after finish: {"player":"7yn4UhK9ygQkJBiKYMxVeBLfknowRoWHzxpJVwFujcAX","score":45,"startedAt":1795592082,"endsAt":1795592142,"status":1,"claimed":false}
+waiting 46s for round window to end...
+claim: https://explorer.solana.com/tx/3bZcVBejJvxfbAcXNUSCHLJUhCeUizwwmkhYsGFbfX9ZWisP4XzGLbkauviMazQoq6xZtLwsZzgFodWLCTL2URea?cluster=devnet
+player balance: 0.2979 -> 0.3479 SOL (delta 0.049995 SOL, expected prize 0.05 SOL)
+leaderboard: [{"player":"7yn4…jcAX","score":45}]
+E2E DONE — score: 45
